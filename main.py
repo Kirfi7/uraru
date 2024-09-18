@@ -54,7 +54,7 @@ def typograph(html_text):
         if element.parent.name not in ['script', 'style']:  # Игнорируем <script> и <style>
             # Преобразование только текстовых полей
             new_text = process_text(element)
-            print(new_text)
+            # print(new_text)
             element.replace_with(new_text)
 
     return str(soup)
